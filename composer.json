@@ -1,0 +1,16 @@
+{
+    "name": "pedro/activerecord",
+    "description": "Activerecord",
+    "authors": [
+        {
+            "name": "Pedro Santiago",
+            "email": "joaopedrosantiago1103@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        }
+    }
+}
