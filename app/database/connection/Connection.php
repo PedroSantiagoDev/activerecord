@@ -15,7 +15,7 @@ class Connection
     {
         try {
             if (!static::$pdo) {
-                static::$pdo = new PDO("mysql:host=localhost;dbname=info", "root", "@Jp27051925", [
+                static::$pdo = new PDO("mysql:host=localhost;dbname=info", "root", "root", [
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ
                 ]);
