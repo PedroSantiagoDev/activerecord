@@ -15,10 +15,13 @@ class Connection
     {
         try {
             if (!static::$pdo) {
-                static::$pdo = new PDO("mysql:host=localhost;dbname=info", "root", "root", [
+
+                static::$pdo = new PDO("mysql:host=localhost;dbname=task", "root", "D!h*$4u9", [
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ
                 ]);
+                var_dump(static::$pdo);
+                die;
             }
 
             return static::$pdo;
